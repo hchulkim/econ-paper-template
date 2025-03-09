@@ -11,17 +11,36 @@ TBD.
 
 TBD.
 
-## Usage 
-
-TBD.
-
 You can view a preview of the rendered template at [https://github.com/hchulkim/econ-paper-template/blob/main/template.pdf](https://github.com/hchulkim/econ-paper-template/blob/main/template.pdf)
 
-## Why use Quarto?
+## Why use Quarto?[^1]
+
+Quarto is an open-source scientific and technical publishing system. 
+
+1. **Language agnostic**: Create dynamic content with Python, R, Julia, and Observable.
+2. **Supports various output formats**: Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+3. Write using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
+4. A more easier version of LyX.
+
+[^1]: This section is cited from official Quarto website.
 
 ## How to install Quarto
 
+Go to Quarto website to download Quarto: [Get started](https://quarto.org/docs/get-started/). The also have a nice tutorial.
+
 ## Basic tips
+
+1. Mainly use qmd file for writing your paper. After writing your draft in qmd file, use following code in the terminal to render the file into pdf, tex, html:
+
+```{bash}
+quarto render template.qmd
+```
+
+2. If you need to change the format in the title page, use the `before-body.tex` file in the `partials` folder.
+
+3. If you need to change the latex header, use the `_include-header.tex` file in the `partials` folder.
+
+4. For citation, use the good ol' bibtex. You can add your citation in the `bibliography.bib` file.
 
 ## Main contributors
 
