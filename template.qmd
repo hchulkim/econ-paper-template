@@ -15,12 +15,13 @@ date-format: long
 author:
   - name: Hyoungchul Kim
     acknowledgements: | 
-      The creator. The Wharton School, University of Pennsylvania. 
+      The creator. We want to thank...
     affiliations:
       - name: University of XXX
   - name: Author 2
     affiliations:
       - name: University of WWW
+      - department: Department of Economics
 abstract: |
   The text of your abstract.
 keywords:
