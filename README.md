@@ -72,7 +72,7 @@ quarto render template.qmd
 
 1. [Hyoungchul Kim](https://hchulkim.github.io): Ph.D. student in Applied Economics at The Wharton School, UPenn. [Email Me](mailto:hchulkim@wharton.upenn.edu)
 
-2. 
+2. [Wooyong (Tommy) Park](https://wyeconomics.github.io): Incoming predoctoral research fellow at Stanford GSB. [Email Me](mailto:tommypark822@gmail.com)
 
 ## Acknowledgement
 
