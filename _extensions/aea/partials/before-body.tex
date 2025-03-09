@@ -1,0 +1,44 @@
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+$if(date)$
+\date{\href{https://hchulkim.github.io}{Link to Latest version}\\ \vspace{1em} Last updated $date$}
+$endif$
+$if(journal.blinded)$
+\spacingset{.8}
+\bigskip
+\bigskip
+\bigskip
+\begin{center}
+  {\LARGE\bf $title$}
+\end{center}
+\smallskip
+\bigskip
+\spacingset{1}
+$else$
+\title{$title$}
+\author{
+$for(by-author)$
+$it.name.literal$$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$\\
+$for(it.affiliations)$$if(it.department)$$it.department$$if(it.name)$, $endif$$endif$$if(it.name)$$it.name$$endif$$if(it.department)$\\$elseif(it.name)$\\$endif$
+$endfor$$sep$\\$endfor$}
+\maketitle
+$endif$
+
+\bigskip
+\bigskip
+\begin{abstract}
+$abstract$
+\end{abstract}
+
+$if(keywords)$
+\noindent%
+{\it Keywords:} $for(keywords)$$it$$sep$, $endfor$
+\vfill
+$endif$
+
+\newpage
+\spacingset{1.2} % DON'T change the spacing!

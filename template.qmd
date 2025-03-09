@@ -1,0 +1,104 @@
+---
+title: Paper Template
+format:
+  aea-pdf:
+    keep-tex: true  
+    journal:
+      blinded: false
+    indent: true
+    linkcolor: cyan
+    urlcolor: cyan
+    citecolor: cyan
+  aea-html: default
+date: last-modified
+date-format: long
+author:
+  - name: Hyoungchul Kim
+    acknowledgements: | 
+      The creator. The Wharton School, University of Pennsylvania. 
+    affiliations:
+      - name: University of XXX
+  - name: Author 2
+    affiliations:
+      - name: University of WWW
+abstract: |
+  The text of your abstract.
+keywords:
+  - 3 to 6 keywords
+bibliography: bibliography.bib  
+---
+
+## Introduction {#sec-intro}
+
+I will show some examples of things you can easily do in quarto-format.
+
+### Math
+
+You can easily use latex math format in quarto.
+
+This is in-line math: $x + y = 7$.
+
+This is display-style math:
+$$x + y = 7.$$
+
+You can also use begin align style syntax:
+\begin{align}
+  x + y &= 7\\
+  t + v &= 10.
+\end{align}
+
+### Figures
+
+Putting figures is easy in quarto. Use syntax like this:
+
+![Consistency comparison in fitting surrogate model in the tidal power example.](fig1.pdf){#fig-first width=3in}
+
+### Tables
+
+Making custom tables is easy. Do something like this:
+
+| one  | two  | three | four | five |
+|------|------|-------|------|------|
+| 1.23 | 3.45 | 5.00  | 1.21 | 3.41 |
+| 1.23 | 3.45 | 5.00  | 1.21 | 3.42 |
+| 1.23 | 3.45 | 5.00  | 1.21 | 3.43 |
+
+: D-optimality values for design X under five different scenarios. {#tbl-one}
+
+You can also input a table using latex syntax:
+
+\begin{table}[!h]
+  \resizebox{\textwidth}{!}{
+  \input{tables.tex}}
+\end{table}
+
+- Note that figures and tables (such as @fig-first and @tbl-one) should appear in the paper, not at the end or in separate files.
+
+## Related literature {#sec-lit}
+
+Some citation example.
+
+@gelm:veht:2021 offer some guidance about key ideas about statistical ideas.
+On an unrelated note, spreadsheets are important to use correctly [@brom:woo:2018].
+Log-linear models are an attractive way to model categorical data [@bish:fien:1975].
+
+## Methods {#sec-meth}
+
+Lorem ipsum. Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
+
+Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
+
+Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
+
+## Results {#sec-result}
+
+## Conclusion {#sec-conc}
+
+## Appendix {.supplementary}
+
+Section for Appendix.
+
+## BibTeX 
+
+We encourage you to use BibTeX.
+If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file agsm has been included here for your convenience. 
