@@ -268,7 +268,8 @@ one & two & three & four & five \\
 
 You can also input a table using latex syntax:
 
-\begin{table}[!h]
+\begin{table}[!h] 
+  \caption{Main results}\label{tbl-second}
   \resizebox{\textwidth}{!}{
   \input{tables.tex}}
 \end{table}
@@ -277,8 +278,8 @@ You can also input a table using latex syntax:
 \tightlist
 \item
   Note that figures and tables (such as Figure~\ref{fig-first} and
-  Table~\ref{tbl-one}) should appear in the paper, not at the end or in
-  separate files.
+  Table~\ref{tbl-one}, \ref{tbl-second}) should appear in the paper, not
+  at the end or in separate files.
 \end{itemize}
 
 \section{Related literature}\label{sec-lit}

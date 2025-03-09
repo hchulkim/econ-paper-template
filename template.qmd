@@ -67,12 +67,15 @@ Making custom tables is easy. Do something like this:
 
 You can also input a table using latex syntax:
 
-\begin{table}[!h]
+
+\begin{table}[!h] 
+  \caption{Main results}\label{tbl-second}
   \resizebox{\textwidth}{!}{
   \input{tables.tex}}
 \end{table}
 
-- Note that figures and tables (such as @fig-first and @tbl-one) should appear in the paper, not at the end or in separate files.
+
+- Note that figures and tables (such as @fig-first and @tbl-one, \ref{tbl-second}) should appear in the paper, not at the end or in separate files.
 
 ## Related literature {#sec-lit}
 
