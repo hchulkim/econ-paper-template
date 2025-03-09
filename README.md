@@ -1,5 +1,5 @@
 
-# <%= title %>
+# Academic paper for Economist
 
 ## Creating a New Article
 
