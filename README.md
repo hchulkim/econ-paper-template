@@ -26,11 +26,11 @@ Quarto is an open-source scientific and technical publishing system.
 
 ## How to install Quarto
 
-Go to Quarto website to download Quarto: [Get started](https://quarto.org/docs/get-started/). The also have a nice tutorial.
+Download Quarto from their website: [Get started](https://quarto.org/docs/get-started/). The also have a nice tutorial.
 
 ## Basic tips
 
-1. Mainly use qmd file for writing your paper. After writing your draft in qmd file, use following code in the terminal to render the file into pdf, tex, html:
+1. Mainly use qmd file to write your paper. After writing your draft in qmd file, use the following code in the terminal to render the file into pdf, tex, html:
 
 ```{bash}
 quarto render template.qmd
