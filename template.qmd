@@ -43,9 +43,11 @@ $$x + y = 7.$$
 
 You can also use begin align style syntax:
 \begin{align}
-  x + y &= 7\\
-  t + v &= 10.
+  x + y &= 7\label{eq:1}\\
+  t + v &= 10.\label{eq:2}
 \end{align}
+
+This is equation \ref{eq:1}. This is equation \ref{eq:2}.
 
 ### Figures
 

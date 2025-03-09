@@ -95,7 +95,6 @@
 \usepackage[tableposition=top]{caption}
 \usepackage{tabularx, calc}
 \usepackage{threeparttable}
-\usepackage{subfigure}
 \usepackage{picinpar}  
 \usepackage{longtable}
 \usepackage{ae}
@@ -222,9 +221,11 @@ This is in-line math: \(x + y = 7\).
 This is display-style math: \[x + y = 7.\]
 
 You can also use begin align style syntax: \begin{align}
-  x + y &= 7\\
-  t + v &= 10.
+  x + y &= 7\label{eq:1}\\
+  t + v &= 10.\label{eq:2}
 \end{align}
+
+This is equation \ref{eq:1}. This is equation \ref{eq:2}.
 
 \subsection{Figures}\label{figures}
 

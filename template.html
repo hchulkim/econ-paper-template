@@ -187,9 +187,10 @@ window.Quarto = {
 <p>This is in-line math: <span class="math inline">\(x + y = 7\)</span>.</p>
 <p>This is display-style math: <span class="math display">\[x + y = 7.\]</span></p>
 <p>You can also use begin align style syntax: <span class="math display">\[\begin{align}
-  x + y &amp;= 7\\
-  t + v &amp;= 10.
+  x + y &amp;= 7\label{eq:1}\\
+  t + v &amp;= 10.\label{eq:2}
 \end{align}\]</span></p>
+<p>This is equation <span class="math inline">\(\ref{eq:1}\)</span>. This is equation <span class="math inline">\(\ref{eq:2}\)</span>.</p>
 </section>
 <section id="figures" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="figures"><span class="header-section-number">1.2</span> Figures</h3>
