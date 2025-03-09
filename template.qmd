@@ -77,6 +77,10 @@ You can also input a table using latex syntax:
 
 - Note that figures and tables (such as @fig-first and @tbl-one, \ref{tbl-second}) should appear in the paper, not at the end or in separate files.
 
+![Map of Korea](fig2.png){#fig-second}
+
+Another figure: @fig-second
+
 ## Related literature {#sec-lit}
 
 Some citation example.
@@ -97,11 +101,17 @@ Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ip
 
 ## Conclusion {#sec-conc}
 
+## References {.unnumbered}
+
+::: {#refs}
+:::
+
 ## Appendix {.supplementary}
 
 Section for Appendix.
 
-## BibTeX 
+### Appendix A {.unnumbered}
 
-We encourage you to use BibTeX.
-If you have, please feel free to use the package natbib with any bibliography style you're comfortable with. The .bst file agsm has been included here for your convenience. 
+### Appendix B {.unnumbered}
+
+## Supplementary {.supplementary}

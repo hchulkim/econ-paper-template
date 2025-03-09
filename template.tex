@@ -90,7 +90,6 @@
 \usepackage[nomarginpar]{geometry}
 \usepackage{setspace}
 \usepackage{natbib}
-\onehalfspacing
 \usepackage{lscape}
 \usepackage{rotating}
 \usepackage[tableposition=top]{caption}
@@ -108,12 +107,12 @@
 \usepackage{adjustbox}
 \usepackage{booktabs} 
 \usepackage{ulem}
-\usepackage{kotex}
 \usepackage{ragged2e}
 \usepackage{changepage}
 \usepackage{longtable}
 
 \geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+\onehalfspacing
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -176,7 +175,7 @@
 
 \title{Paper Template}
 \author{Hyoungchul Kim \and Author 2}
-\date{March 8, 2025}
+\date{March 9, 2025}
 
 \begin{document}
 \def\spacingset#1{\renewcommand{\baselinestretch}%
@@ -186,7 +185,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \date{\href{https://hchulkim.github.io}{Link to Latest version}\\ \vspace{1em} Last updated March
-8, 2025}
+9, 2025}
 \title{Paper Template}
 \author{
 Hyoungchul Kim\thanks{The creator. The Wharton School, University of
@@ -282,6 +281,20 @@ You can also input a table using latex syntax:
   at the end or in separate files.
 \end{itemize}
 
+\begin{figure}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{fig2.png}}
+
+}
+
+\caption{\label{fig-second}Map of Korea}
+
+\end{figure}%
+
+Another figure: Figure~\ref{fig-second}
+
 \section{Related literature}\label{sec-lit}
 
 Some citation example.
@@ -341,6 +354,12 @@ ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
 
 \section{Conclusion}\label{sec-conc}
 
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\renewcommand{\bibsection}{}
+\bibliography{bibliography.bib}
+
 \phantomsection\label{appendix}
 \bigskip
 
@@ -352,14 +371,22 @@ ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
 
 Section for Appendix.
 
-\section{BibTeX}\label{bibtex}
+\subsection*{Appendix A}\label{appendix-a}
+\addcontentsline{toc}{subsection}{Appendix A}
 
-We encourage you to use BibTeX. If you have, please feel free to use the
-package natbib with any bibliography style you're comfortable with. The
-.bst file agsm has been included here for your convenience.
+\subsection*{Appendix B}\label{appendix-b}
+\addcontentsline{toc}{subsection}{Appendix B}
+
+\phantomsection\label{supplementary}
+\bigskip
+
+\begin{center}
+
+{\large\bf SUPPLEMENTARY}
+
+\end{center}
 
 
-  \bibliography{bibliography.bib}
 
 
 

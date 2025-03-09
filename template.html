@@ -8,7 +8,7 @@
 
 <meta name="author" content="Hyoungchul Kim">
 <meta name="author" content="Author 2">
-<meta name="dcterms.date" content="2025-03-08">
+<meta name="dcterms.date" content="2025-03-09">
 <meta name="keywords" content="3 to 6 keywords">
 
 <title>Paper Template</title>
@@ -108,8 +108,13 @@ window.Quarto = {
   <li><a href="#sec-meth" id="toc-sec-meth" class="nav-link" data-scroll-target="#sec-meth"><span class="header-section-number">3</span> Methods</a></li>
   <li><a href="#sec-result" id="toc-sec-result" class="nav-link" data-scroll-target="#sec-result"><span class="header-section-number">4</span> Results</a></li>
   <li><a href="#sec-conc" id="toc-sec-conc" class="nav-link" data-scroll-target="#sec-conc"><span class="header-section-number">5</span> Conclusion</a></li>
-  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
-  <li><a href="#bibtex" id="toc-bibtex" class="nav-link" data-scroll-target="#bibtex"><span class="header-section-number">6</span> BibTeX</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">Appendix A</a></li>
+  <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">Appendix B</a></li>
+  </ul></li>
+  <li><a href="#supplementary" id="toc-supplementary" class="nav-link" data-scroll-target="#supplementary">Supplementary</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="template.pdf"><i class="bi bi-file-pdf"></i>PDF (aea)</a></li></ul></div></nav>
 </div>
@@ -149,7 +154,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 8, 2025</p>
+      <p class="date">March 9, 2025</p>
     </div>
   </div>
   
@@ -250,6 +255,17 @@ Table&nbsp;1: D-optimality values for design X under five different scenarios.
 <ul>
 <li>Note that figures and tables (such as <a href="#fig-first" class="quarto-xref">Figure&nbsp;1</a> and <a href="#tbl-one" class="quarto-xref">Table&nbsp;1</a>, <span class="math inline">\(\ref{tbl-second}\)</span>) should appear in the paper, not at the end or in separate files.</li>
 </ul>
+<div id="fig-second" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-second-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Map of Korea
+</figcaption>
+</figure>
+</div>
+<p>Another figure: <a href="#fig-second" class="quarto-xref">Figure&nbsp;2</a></p>
 </section>
 </section>
 <section id="sec-lit" class="level2" data-number="2">
@@ -269,17 +285,9 @@ Table&nbsp;1: D-optimality values for design X under five different scenarios.
 <section id="sec-conc" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="sec-conc"><span class="header-section-number">5</span> Conclusion</h2>
 </section>
-<section id="appendix" class="level2 supplementary unnumbered">
-<h2 class="supplementary unnumbered anchored" data-anchor-id="appendix">Appendix</h2>
-<p>Section for Appendix.</p>
-</section>
-<section id="bibtex" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="bibtex"><span class="header-section-number">6</span> BibTeX</h2>
-<p>We encourage you to use BibTeX. If you have, please feel free to use the package natbib with any bibliography style you’re comfortable with. The .bst file agsm has been included here for your convenience.</p>
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-bish:fien:1975" class="csl-entry" role="listitem">
 Bishop, Yvonne M. M., Stephen E. Fienberg, and Paul W. Holland. 1975. <em>Discrete Multivariate Analyses: Theory and Practice</em>. Boston, MA: MIT Press.
 </div>
@@ -289,7 +297,23 @@ Broman, Karl W., and Kara H. Woo. 2018. <span>“<span class="nocase">Data Organ
 <div id="ref-gelm:veht:2021" class="csl-entry" role="listitem">
 Gelman, Andrew, and Aki Vehtari. 2021. <span>“<span class="nocase">What are the Most Important Statistical Ideas of the Past 50 Years?</span>”</span> <em>Journal of the American Statistical Association</em> 116 (536): 2087–97. <a href="https://doi.org/10.1080/01621459.2021.1938081">https://doi.org/10.1080/01621459.2021.1938081</a>.
 </div>
-</div></section></div></main>
+</div>
+</section>
+<section id="appendix" class="level2 supplementary unnumbered">
+<h2 class="supplementary unnumbered anchored" data-anchor-id="appendix">Appendix</h2>
+<p>Section for Appendix.</p>
+<section id="appendix-a" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="appendix-a">Appendix A</h3>
+</section>
+<section id="appendix-b" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="appendix-b">Appendix B</h3>
+</section>
+</section>
+<section id="supplementary" class="level2 supplementary unnumbered">
+<h2 class="supplementary unnumbered anchored" data-anchor-id="supplementary">Supplementary</h2>
+</section>
+
+</main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
