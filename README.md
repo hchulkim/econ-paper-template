@@ -26,7 +26,7 @@ quarto add quarto-journals/aea
 To use the format, you can use the format names jasa-pdf and jasa-html. For example:
 
 ```
-quarto render article.qmd --to aea-pdf
+quarto render template.qmd --to aea-pdf
 ```
 
 or in your document yaml
