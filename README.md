@@ -23,7 +23,7 @@ quarto add quarto-journals/aea
 
 ## Usage (Note: This function is not yet available.)
 
-To use the format, you can use the format names jasa-pdf and jasa-html. For example:
+To use the format, you can use the format names aea-pdf and aea-html. For example:
 
 ```
 quarto render template.qmd --to aea-pdf
