@@ -54,6 +54,46 @@
 \fi
 \makeatother
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -174,7 +214,7 @@
 
 \title{Paper Template}
 \author{Hyoungchul Kim \and Author 2}
-\date{March 9, 2025}
+\date{March 10, 2025}
 
 \begin{document}
 \def\spacingset#1{\renewcommand{\baselinestretch}%
@@ -184,7 +224,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \date{\href{https://hchulkim.github.io}{Link to Latest version}\\ \vspace{1em} Last updated March
-9, 2025}
+10, 2025}
 \title{Paper Template}
 \author{
 Hyoungchul Kim\thanks{The creator. We want to thank\ldots{}}\\
@@ -300,12 +340,17 @@ Another figure: Figure~\ref{fig-second}
 
 Some citation example.
 
-\citet{gelm:veht:2021} offer some guidance about key ideas about
-statistical ideas. On an unrelated note, spreadsheets are important to
-use correctly \citep{brom:woo:2018}. Log-linear models are an attractive
-way to model categorical data \citep{bish:fien:1975}.
+\citet{schott}: The famous international trade PNTR paper.
+
+\citet{berlin}: Another famous paper in urban/spatial economics.
+
+You can also put them inside the paranthesis: \citep{schott, berlin}.
+
+Also, you can cite sections: Section~\ref{sec-lit}.
 
 \section{Methods}\label{sec-meth}
+
+Some few rouns of Lorem ipums to give you the sense of the format:
 
 Lorem ipsum. Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem
 ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem
@@ -353,6 +398,42 @@ ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
 
 \section{Results}\label{sec-result}
 
+I am not sure you would need this, but in quarto, you can directly type
+codes and get their outputs (I know it's not pretty\ldots{} You can
+customize it later if you want though):
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(fixest)}
+
+\NormalTok{mods }\OtherTok{=} \FunctionTok{feols}\NormalTok{(}
+\NormalTok{  rating }\SpecialCharTok{\textasciitilde{}}\NormalTok{ complaints }\SpecialCharTok{+}\NormalTok{ privileges }\SpecialCharTok{+}\NormalTok{ learning }\SpecialCharTok{+} \FunctionTok{csw0}\NormalTok{(raises }\SpecialCharTok{+}\NormalTok{ critical),}
+  \AttributeTok{data =}\NormalTok{ attitude}
+\NormalTok{)}
+
+\FunctionTok{summary}\NormalTok{(mods)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Standard-errors: IID 
+Expl. vars.: complaints + privileges + learning
+             Estimate Std. Error   t value   Pr(>|t|)    
+(Intercept) 11.258305   7.318340  1.538369 1.3604e-01    
+complaints   0.682416   0.128845  5.296434 1.5395e-05 ***
+privileges  -0.103284   0.129345 -0.798515 4.3181e-01    
+learning     0.237976   0.139410  1.707021 9.9735e-02 .  
+---
+Expl. vars.: complaints + privileges + learning + raises + critical
+             Estimate Std. Error   t value   Pr(>|t|)    
+(Intercept) 11.011130  11.703936  0.940806 0.35617817    
+complaints   0.692053   0.148864  4.648883 0.00010141 ***
+privileges  -0.103562   0.134730 -0.768665 0.44959057    
+learning     0.249061   0.159619  1.560350 0.13176795    
+raises      -0.033461   0.202276 -0.165420 0.86999856    
+critical     0.015488   0.147250  0.105184 0.91710401    
+\end{verbatim}
+
 \section{Conclusion}\label{sec-conc}
 
 \section*{References}\label{references}
@@ -370,10 +451,16 @@ ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.
 
 \end{center}
 
+\texttt{\{.supplementary\}} works as an indicator that makes the section
+centered. Useful when starting an appendix or supplementary sections.
+
 Section for Appendix.
 
 \subsection*{Appendix A}\label{appendix-a}
 \addcontentsline{toc}{subsection}{Appendix A}
+
+Use \texttt{\{.unnumbered\}} to unnumber the section and give your own
+numbering.
 
 \subsection*{Appendix B}\label{appendix-b}
 \addcontentsline{toc}{subsection}{Appendix B}
