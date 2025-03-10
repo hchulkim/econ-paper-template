@@ -201,7 +201,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Paper Template},
+  pdftitle={Paper template},
   pdfauthor={Hyoungchul Kim; Author 2},
   pdfkeywords={3 to 6 keywords},
   colorlinks=true,
@@ -212,7 +212,7 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{Paper Template}
+\title{Paper template}
 \author{Hyoungchul Kim \and Author 2}
 \date{March 10, 2025}
 
@@ -225,11 +225,11 @@
 
 \date{\href{https://hchulkim.github.io}{Link to Latest version}\\ \vspace{1em} Last updated March
 10, 2025}
-\title{Paper Template}
+\title{Paper template\thanks{Some footnotes on the title\ldots{}}}
 \author{
 Hyoungchul Kim\thanks{The creator. We want to thank\ldots{}}\\
-University of XXX\\
-\\Author 2\\
+University of Pennsylvania\\
+\\Author 2\thanks{Another author's acknowledgements..}\\
 University of WWW\\
 Department of Economics\\
 }
@@ -241,6 +241,7 @@ Department of Economics\\
 The text of your abstract.
 \end{abstract}
 
+\bigskip
 \noindent%
 {\it Keywords:} 3 to 6 keywords
 \vfill
@@ -289,8 +290,7 @@ model in the tidal power example.}
 Making custom tables is easy. Do something like this:
 
 \begin{longtable}[]{@{}lllll@{}}
-\caption{D-optimality values for design X under five different
-scenarios.}\label{tbl-one}\tabularnewline
+\caption{Custom made tables}\label{tbl-one}\tabularnewline
 \toprule\noalign{}
 one & two & three & four & five \\
 \midrule\noalign{}
@@ -306,10 +306,10 @@ one & two & three & four & five \\
 1.23 & 3.45 & 5.00 & 1.21 & 3.43 \\
 \end{longtable}
 
-You can also input a table using latex syntax:
+You can also input a table using raw latex syntax:
 
 \begin{table}[!h] 
-  \caption{Main results}\label{tbl-second}
+  \caption{Main results}\label{tbl-second} % Note that you need to use the latex syntax labeling here.
   \resizebox{\textwidth}{!}{
   \input{tables.tex}}
 \end{table}
@@ -350,7 +350,7 @@ Also, you can cite sections: Section~\ref{sec-lit}.
 
 \section{Methods}\label{sec-meth}
 
-Some few rouns of Lorem ipums to give you the sense of the format:
+Some few rounds of Lorem ipsums to give you a sense of the format:
 
 Lorem ipsum. Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem
 ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem

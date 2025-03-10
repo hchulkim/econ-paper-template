@@ -19,7 +19,7 @@ $if(journal.blinded)$
 \bigskip
 \spacingset{1}
 $else$
-\title{$title$}
+\title{$title$$if(title-footnote)$\thanks{$title-footnote$}$endif$}
 \author{
 $for(by-author)$
 $it.name.literal$$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$\\
@@ -34,6 +34,7 @@ $endif$
 $abstract$
 \end{abstract}
 
+\bigskip
 $if(keywords)$
 \noindent%
 {\it Keywords:} $for(keywords)$$it$$sep$, $endfor$
