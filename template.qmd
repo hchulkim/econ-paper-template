@@ -4,7 +4,7 @@ format:
   aea-pdf:
     keep-tex: true  
     journal:
-      blinded: false
+      blinded: true
     indent: true
     linkcolor: cyan
     urlcolor: cyan
