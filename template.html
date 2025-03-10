@@ -325,31 +325,15 @@ Figure&nbsp;2: Map of Korea
 <h2 data-number="4" class="anchored" data-anchor-id="sec-result"><span class="header-section-number">4</span> Results</h2>
 <p>I am not sure you would need this, but in quarto, you can directly type codes and get their outputs (I know it’s not pretty… You can customize it later if you want though):</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>mods <span class="ot">=</span> <span class="fu">feols</span>(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  rating <span class="sc">~</span> complaints <span class="sc">+</span> privileges <span class="sc">+</span> learning <span class="sc">+</span> <span class="fu">csw0</span>(raises <span class="sc">+</span> critical),</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> attitude</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mods)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>attitude <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Standard-errors: IID 
-Expl. vars.: complaints + privileges + learning
-             Estimate Std. Error   t value   Pr(&gt;|t|)    
-(Intercept) 11.258305   7.318340  1.538369 1.3604e-01    
-complaints   0.682416   0.128845  5.296434 1.5395e-05 ***
-privileges  -0.103284   0.129345 -0.798515 4.3181e-01    
-learning     0.237976   0.139410  1.707021 9.9735e-02 .  
----
-Expl. vars.: complaints + privileges + learning + raises + critical
-             Estimate Std. Error   t value   Pr(&gt;|t|)    
-(Intercept) 11.011130  11.703936  0.940806 0.35617817    
-complaints   0.692053   0.148864  4.648883 0.00010141 ***
-privileges  -0.103562   0.134730 -0.768665 0.44959057    
-learning     0.249061   0.159619  1.560350 0.13176795    
-raises      -0.033461   0.202276 -0.165420 0.86999856    
-critical     0.015488   0.147250  0.105184 0.91710401    </code></pre>
+<pre><code>  rating complaints privileges learning raises critical advance
+1     43         51         30       39     61       92      45
+2     63         64         51       54     63       73      47
+3     71         70         68       69     76       86      48
+4     61         63         45       47     54       84      35
+5     81         78         56       66     71       83      47
+6     43         55         49       44     54       49      34</code></pre>
 </div>
 </div>
 </section>

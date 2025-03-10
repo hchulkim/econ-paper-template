@@ -4,11 +4,11 @@ format:
   aea-pdf:
     keep-tex: true  
     journal:
-      blinded: true
+      blinded: false
     indent: true
+    citecolor: cyan
     linkcolor: cyan
     urlcolor: cyan
-    citecolor: cyan
   aea-html: default
 title-footnote: |
   Some footnotes on the title...
@@ -115,14 +115,8 @@ Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ipsum.Lorem ip
 I am not sure you would need this, but in quarto, you can directly type codes and get their outputs (I know it's not pretty... You can customize it later if you want though):
 
 ```{r}
-library(fixest)
 
-mods = feols(
-  rating ~ complaints + privileges + learning + csw0(raises + critical),
-  data = attitude
-)
-
-summary(mods)
+attitude |> head()
 
 ```
 
@@ -136,8 +130,6 @@ summary(mods)
 ## Appendix {.supplementary}
 
 `{.supplementary}` works as an indicator that makes the section centered. Useful when starting an appendix or supplementary sections.
-
-Section for Appendix.
 
 ### Appendix A {.unnumbered}
 
