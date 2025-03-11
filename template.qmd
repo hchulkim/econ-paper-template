@@ -74,13 +74,14 @@ Making custom tables is easy. Do something like this:
 
 You can also input a table using raw latex syntax:
 
-
 \begin{table}[!h] 
   \caption{Main results}\label{tbl-second} % Note that you need to use the latex syntax labeling here.
   \resizebox{\textwidth}{!}{
   \input{tables.tex}}
+  \begin{tablenotes}
+      \item \footnotesize{\textit{Notes:} All values of export and import are from Comtrade dataset. All values are adjusted to year 2019 in billions USD. $\text{*}$ are stars}
+    \end{tablenotes}
 \end{table}
-
 
 - Note that figures and tables (such as @fig-first and @tbl-one, \ref{tbl-second}) should appear in the paper, not at the end or in separate files.
 
