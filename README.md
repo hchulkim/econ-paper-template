@@ -1,27 +1,27 @@
 
 # Academic paper for Economists
 
-This is a Quarto template for making an academic working paper that is often used in the field of Economics.
+This is a Quarto template for making an academic working paper that is often used in the field of Economics. It is named "aea" as it is loosely based on the paper template given by AEA.
 
-## Creating a new article (Note: This function is not yet available.)
+## Creating a new article
 
-You can use this as a template to create an article for an ASA journal. To do this, use the following command:
+You can use this as a template to create your own working paper. To do this, use the following command:
 
 ```
-quarto use template quarto-journals/aea
+quarto use template hchulkim/econ-paper-template
 ```
 
 This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
 
-## Installation For Existing Document (Note: This function is not yet available.)
+## Installation For Existing Document
 
 You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
 ```
-quarto add quarto-journals/aea
+quarto add hchulkim/econ-paper-template
 ```
 
-## Usage (Note: This function is not yet available.)
+## Usage
 
 To use the format, you can use the format names aea-pdf and aea-html. For example:
 
