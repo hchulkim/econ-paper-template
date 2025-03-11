@@ -68,9 +68,25 @@ quarto render template.qmd
 
 4. For citation, use the good ol' bibtex. You can add your citation in the `bibliography.bib` file.
 
+
+<details>
+  <summary>Miscellaneous (Customizing template.qmd file)</summary>
+
+1. Try not to use other pdf engines than pdfLaTeX. Currently, the template is optimized for pdfLaTeX. For example, there is some issue with XeLaTeX where it would not print the \* in the latex code (which means significance).
+
+2. If you set `blinded: true` in the yaml header, it will hide the author information in the title page. This feature is not that necessary for working papers in Economics, but still, it is there.
+
+3. You can change the cite, link, url color in the yaml header. Currenlty, it is set to cyan. 
+
+4. Use `title-footnote` in the yaml header to add a footnote in the title page. Similarly, use `acknowledgements` to add acknowledgements for each author.
+
+5. Use `abstract` in the yaml header to add an abstract. Similarly for the `keywords`.
+
+</details>
+
 ## Main contributors
 
-1. [Hyoungchul Kim](https://hchulkim.github.io): Ph.D. student in Applied Economics at The Wharton School, UPenn. [Email Me](mailto:hchulkim@wharton.upenn.edu)
+1. [Hyoungchul Kim (Creator)](https://hchulkim.github.io): Ph.D. student in Applied Economics at The Wharton School, UPenn. [Email Me](mailto:hchulkim@wharton.upenn.edu)
 
 2. [Wooyong (Tommy) Park](https://wyeconomics.github.io): Incoming predoctoral research fellow at Stanford GSB. [Email Me](mailto:tommypark822@gmail.com)
 
