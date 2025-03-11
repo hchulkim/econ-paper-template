@@ -2,6 +2,7 @@
 title: Paper template
 format:
   aea-pdf:
+    pdf-engine: pdflatex
     keep-tex: true  
     journal:
       blinded: false
