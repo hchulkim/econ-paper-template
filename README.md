@@ -5,7 +5,7 @@ This is a Quarto template for making an academic working paper that is often use
 
 ## Creating a new article
 
-You can use this as a template to create your own working paper. To do this, run in terminal in the root directory of your project:
+You can use this as a template to create your own working paper. To do this, run in terminal:
 
 ```
 quarto use template hchulkim/econ-paper-template
