@@ -5,13 +5,13 @@ This is a Quarto template for making an academic working paper that is often use
 
 ## Creating a new article
 
-You can use this as a template to create your own working paper. To do this, use the following command:
+You can use this as a template to create your own working paper. To do this, run in terminal in the root directory of your project:
 
 ```
 quarto use template hchulkim/econ-paper-template
 ```
 
-This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+This will install the extension in the `_extensions` subdirectory and create an example qmd file and bibiography that you can use as a starting place for your article.
 
 ## Installation For Existing Document
 
