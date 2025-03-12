@@ -21,10 +21,17 @@ $if(journal.blinded)$
 $else$
 \title{$title$$if(title-footnote)$\thanks{$title-footnote$}$endif$}
 \author{
+$if(author-format)$
 $for(by-author)$
 $it.name.literal$$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$\\
 $for(it.affiliations)$$if(it.department)$$it.department$$if(it.name)$, $endif$$endif$$if(it.name)$$it.name$$endif$$if(it.department)$\\$elseif(it.name)$\\$endif$
-$endfor$$sep$\\$endfor$}
+$endfor$$sep$\and $endfor$
+$else$
+$for(by-author)$
+$it.name.literal$$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$\\
+$for(it.affiliations)$$if(it.department)$$it.department$$if(it.name)$, $endif$$endif$$if(it.name)$$it.name$$endif$$if(it.department)$\\$elseif(it.name)$\\$endif$
+$endfor$$sep$\\$endfor$
+$endif$}
 \maketitle
 $endif$
 

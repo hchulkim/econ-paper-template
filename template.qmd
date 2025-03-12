@@ -12,6 +12,7 @@ format:
   aea-html: default
 title-footnote: |
   Some footnotes on the title...
+author-format: horizontal
 author:
   - name: Hyoungchul Kim
     acknowledgements: | 
