@@ -1,7 +1,7 @@
 
 # Academic working paper template for Economists
 
-This is a Quarto template for making an academic working paper that is often used in the field of Economics. It is named "aea" as it is loosely based on the paper template given by AEA.
+This is a Quarto template for making an academic working paper that is often used in the field of Economics. It is named **"aea"** as it is loosely based on the paper template given by [AEA](https://www.aeaweb.org/journals/templates).
 
 ## Creating a new article
 
