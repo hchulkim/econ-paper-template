@@ -10,12 +10,14 @@ contributes:
       journal:
         blinded: false
     pdf:
+      pdf-engine: pdflatex
       include-in-header: partials/_include-in-header.tex
       documentclass: article
       classoption:
         - 11pt
-      biblio-style: econ
+      date-format: long 
       cite-method: natbib
+      biblio-style: econ
       format-resources:
         - econ.bst
       template-partials:

@@ -2,7 +2,6 @@
 title: Paper template
 format:
   aea-pdf:
-    pdf-engine: pdflatex
     keep-tex: true  
     journal:
       blinded: false
@@ -26,7 +25,6 @@ author:
       - name: University of WWW
       - department: Department of Economics
 date: last-modified
-date-format: long
 abstract: |
   The text of your abstract.
 keywords:
