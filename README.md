@@ -46,7 +46,8 @@ Quarto is an open-source scientific and technical publishing system.
 1. **Language agnostic**: Create dynamic content with Python, R, Julia, and Observable.
 2. **Supports various output formats**: Publish reproducible, production quality articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 3. Write using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
-4. A more easier version of LyX.
+4. You can also render the Quarto document on save using the feature in VS code. Check here and go to `Render on save` section: [Render on save](https://quarto.org/docs/tools/vscode.html)
+5. A more easier version of LyX.
 
 [^1]: This section is cited from official Quarto website.
 
