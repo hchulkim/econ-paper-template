@@ -82,6 +82,8 @@ quarto render template.qmd
 
 5. Use `abstract` in the yaml header to add an abstract. Similarly for the `keywords`.
 
+6. `author-format: horizontal` makes the author names to go horizontal. If you remove that line, author names will go vertical.
+
 </details>
 
 ## Main contributors
