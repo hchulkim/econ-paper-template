@@ -71,7 +71,7 @@ quarto render template.qmd
 
 
 <details>
-  <summary>Miscellaneous (Customizing template.qmd file)</summary>
+  <summary><strong>Miscellaneous (Customizing template.qmd file)</strong></summary>
 
 1. Try not to use other pdf engines than pdfLaTeX. Currently, the template is optimized for pdfLaTeX. For example, there is some issue with XeLaTeX where it would not print the \* in the latex code (which means significance).
 
