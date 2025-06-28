@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 $if(date)$
-\date{\href{https://hchulkim.github.io}{Link to Latest version}\\ \vspace{1em} Last updated $date$}
+\date{$if(articleurl)$\href{$articleurl$}{Link to Latest version}\\ \vspace{1em} $endif$ Last updated $date$}
 $endif$
 $if(journal.blinded)$
 \spacingset{.8}
