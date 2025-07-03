@@ -26,6 +26,7 @@ author:
       - name: University of WWW
       - department: Department of Economics
 date: last-modified
+articleurl: https://hchulkim.github.io
 abstract: |
   The text of your abstract.
 keywords:
@@ -58,7 +59,7 @@ This is equation \ref{eq:1}. This is equation \ref{eq:2}.
 
 Putting figures is easy in quarto. Use syntax like this:
 
-![Consistency comparison in fitting surrogate model in the tidal power example.](fig1.pdf){#fig-first width=3in}
+![Map of Korea](fig2.png){#fig-first width=7in}
 
 ### Tables
 
