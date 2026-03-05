@@ -1,0 +1,49 @@
+$schema: https://m.canouil.dev/quarto-wizard/assets/schema/v1/extension-schema.json
+
+formats:
+  aea-pdf:
+    journal:
+      type: object
+      description: Journal-specific options for the AEA format.
+      properties:
+        blinded:
+          type: boolean
+          default: false
+          description: Hide author details in the rendered title page.
+    indent:
+      type: boolean
+      description: Enable paragraph indentation.
+    citecolor:
+      type: string
+      description: Citation link colour.
+      completion:
+        type: color
+    linkcolor:
+      type: string
+      description: Hyperlink colour.
+      completion:
+        type: color
+    urlcolor:
+      type: string
+      description: URL colour.
+      completion:
+        type: color
+    title-footnote:
+      type: string
+      description: Footnote text displayed on the title page.
+    author-format:
+      type: string
+      enum:
+        - horizontal
+        - vertical
+      description: Layout used for author names in the title block.
+
+attributes:
+  _any:
+    add-textheight:
+      type: string
+      description: LaTeX length adjustment applied around a Div in PDF output.
+
+classes:
+  supplementary:
+    description: Marks headings/sections as supplementary and applies template-specific styling.

@@ -1,0 +1,24 @@
+{
+  "aea format setup": {
+    "prefix": "aea-format",
+    "body": [
+      "format:",
+      "  aea-pdf:",
+      "    journal:",
+      "      blinded: ${1:false}",
+      "    indent: ${2:true}",
+      "    citecolor: ${3:cyan}",
+      "  aea-html: default"
+    ],
+    "description": "Insert core aea-pdf and aea-html format configuration."
+  },
+  "Supplementary section": {
+    "prefix": "aea-supplementary",
+    "body": [
+      "## ${1:Appendix} {.supplementary}",
+      "",
+      "$0"
+    ],
+    "description": "Insert a supplementary section heading for the AEA template."
+  }
+}
