@@ -1,6 +1,6 @@
 {
   "aea format setup": {
-    "prefix": "aea-format",
+    "prefix": "format",
     "body": [
       "format:",
       "  aea-pdf:",
@@ -13,7 +13,7 @@
     "description": "Insert core aea-pdf and aea-html format configuration."
   },
   "Supplementary section": {
-    "prefix": "aea-supplementary",
+    "prefix": "supplementary",
     "body": [
       "## ${1:Appendix} {.supplementary}",
       "",
