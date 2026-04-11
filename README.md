@@ -69,6 +69,25 @@ quarto render template.qmd
 
 4. For citation, use the good ol' bibtex. You can add your citation in the `bibliography.bib` file.
 
+5. The extension defaults to `cite-method: natbib` with the `econ` bibliography style. If you want to use a different citation method (e.g., `citeproc` with a CSL file), you can override this by adding `natbib: false` to the top level of your document YAML and setting the desired `cite-method` in your format options:
+
+```yaml
+natbib: false
+format:
+  aea-pdf:
+    cite-method: citeproc
+    csl: your-style.csl
+```
+
+   You can also switch to `biblatex` the same way:
+
+```yaml
+format:
+  aea-pdf:
+    cite-method: biblatex
+    biblio-style: authoryear
+```
+
 
 <details>
   <summary><strong>Miscellaneous (Customizing template.qmd file)</strong></summary>
